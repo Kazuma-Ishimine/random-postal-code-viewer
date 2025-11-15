@@ -1,0 +1,36 @@
+{
+    "cSpell.userWords": [
+        "kishimin",
+        "Laravel"
+    ],
+    "editor.formatOnSave": true,
+
+    // TypeScript/JavaScript settings
+    "[typescript]": {
+        // Prettierをデフォルトフォーマッターとして指定
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.maxTokenizationLineLength": 2500,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // PHP settings
+    "[php]": {
+        // Intelephenseをデフォルトフォーマッターとして指定
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+
+    // html settings
+    "[html]": {
+        // Prettierをデフォルトフォーマッターとして指定
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "chat.agent.enabled": false,
+}
