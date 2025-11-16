@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import {
   Autocomplete,
   Button,
@@ -35,8 +34,10 @@ function App() {
                 onChange={(_, check) => setCheck(check)}
               />
             }
+            sx={{ width: "fit-content" }}
           />
         </FormControl>
+
         {check && (
           <FormControl required>
             <FormLabel>{"ちょず"}</FormLabel>
@@ -57,12 +58,14 @@ function App() {
               control={<Radio />}
               label={"vite"}
               value={"true"}
+              sx={{ width: "fit-content" }}
             />
 
             <FormControlLabel
               control={<Radio />}
               label={"not vite"}
               value={"false"}
+              sx={{ width: "fit-content" }}
             />
           </RadioGroup>
         </FormControl>
@@ -79,7 +82,9 @@ function App() {
           />
         </FormControl>
 
-        <Button variant={"contained"}>{"提出"}</Button>
+        <Button variant={"contained"} disabled={check}>
+          {"提出"}
+        </Button>
       </Stack>
     </>
   );
